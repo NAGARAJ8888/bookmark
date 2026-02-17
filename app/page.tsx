@@ -43,7 +43,7 @@ export default function LoginPage() {
     <div className="flex h-screen items-center justify-center bg-gray-50">
       <button
         onClick={handleLogin}
-        className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+        className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition cursor-pointer"
       >
         Sign in with Google
       </button>
