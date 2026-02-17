@@ -40,13 +40,27 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-50">
-      <button
-        onClick={handleLogin}
-        className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition cursor-pointer"
-      >
-        Sign in with Google
-      </button>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 px-4">
+      <div className="bg-white shadow-lg rounded-2xl p-10 w-full max-w-md text-center">
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">
+          Smart Bookmark
+        </h1>
+
+        <p className="text-gray-500 mb-6 text-sm">
+          Your private, real-time bookmark manager
+        </p>
+
+        <button
+          onClick={handleLogin}
+          className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition font-medium"
+        >
+          Sign in with Google
+        </button>
+
+        <p className="text-xs text-gray-400 mt-6">
+          Secure login powered by Google OAuth
+        </p>
+      </div>
     </div>
   )
 }
